@@ -1,2 +1,0 @@
-# RapidRep
-RapidLLC repository.
