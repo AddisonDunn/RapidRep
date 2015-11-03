@@ -13,6 +13,7 @@
         </mutableArray>
         <mutableArray key="Comfortaa-Regular.ttf">
             <string>Comfortaa</string>
+            <string>Comfortaa</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -107,7 +108,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JZw-FN-vlz">
-                                            <rect key="frame" x="8" y="0.0" width="584" height="392"/>
+                                            <rect key="frame" x="8" y="-1" width="584" height="392"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TextContent" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bfN-nX-lwf">
                                                     <rect key="frame" x="8" y="318" width="568" height="41"/>
@@ -116,15 +117,32 @@
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q10-K2-B6g">
-                                                    <rect key="frame" x="0.0" y="-1" width="584" height="311"/>
-                                                    <animations/>
-                                                </imageView>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H9W-kT-doP">
                                                     <rect key="frame" x="254" y="362" width="76" height="30"/>
                                                     <animations/>
                                                     <fontDescription key="fontDescription" name="Comfortaa-Light" family="Comfortaa" pointSize="15"/>
                                                     <state key="normal" title="Comment"/>
+                                                </button>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q10-K2-B6g">
+                                                    <rect key="frame" x="0.0" y="0.0" width="584" height="302"/>
+                                                    <animations/>
+                                                </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3XN-uS-Yzp">
+                                                    <rect key="frame" x="511" y="367" width="46" height="26"/>
+                                                    <animations/>
+                                                    <state key="normal" backgroundImage="Downvote"/>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XgN-7d-3Yw">
+                                                    <rect key="frame" x="527" y="335" width="30" height="34"/>
+                                                    <animations/>
+                                                    <fontDescription key="fontDescription" name="Comfortaa" family="Comfortaa" pointSize="25"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yaA-hS-07b">
+                                                    <rect key="frame" x="511" y="310" width="46" height="26"/>
+                                                    <animations/>
+                                                    <state key="normal" title="Button" image="Upvote"/>
                                                 </button>
                                             </subviews>
                                             <animations/>
@@ -178,6 +196,9 @@
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <animations/>
                                     <state key="normal" backgroundImage="Compose"/>
+                                    <connections>
+                                        <segue destination="L5f-Gh-uxE" kind="presentation" id="ZpU-5E-mjf"/>
+                                    </connections>
                                 </button>
                             </barButtonItem>
                         </rightBarButtonItems>
@@ -189,7 +210,27 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nkx-hP-JHx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2034" y="368"/>
+            <point key="canvasLocation" x="1878" y="368"/>
+        </scene>
+        <!--Post-->
+        <scene sceneID="2tv-a5-Kyt">
+            <objects>
+                <viewController id="Ijr-A9-Qqf" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="C5I-vJ-MkF"/>
+                        <viewControllerLayoutGuide type="bottom" id="3jG-aU-6tF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Wn7-Ni-HtA">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Post" id="u82-xv-OrH"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GeG-pR-VGb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2690" y="1111"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="hmM-nf-0oz">
@@ -210,11 +251,32 @@
             </objects>
             <point key="canvasLocation" x="1140" y="368"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="5G9-iZ-MMp">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="L5f-Gh-uxE" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="YHJ-uY-sHH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Ijr-A9-Qqf" kind="relationship" relationship="rootViewController" id="WA0-Hn-q6g"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wra-ZT-zzf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1878" y="1111"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Compose" width="112" height="112"/>
+        <image name="Downvote" width="50" height="30"/>
         <image name="Filter Icon" width="128" height="128"/>
         <image name="Logo Background A" width="375" height="667"/>
         <image name="Menu Icon" width="1000" height="1000"/>
+        <image name="Upvote" width="50" height="30"/>
     </resources>
 </document>
