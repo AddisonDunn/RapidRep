@@ -174,7 +174,7 @@
                             </barButtonItem>
                             <barButtonItem style="plain" id="wHc-rp-2QS">
                                 <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="NPv-vf-VDo">
-                                    <rect key="frame" x="513" y="7" width="30" height="30"/>
+                                    <rect key="frame" x="517" y="9" width="26" height="26"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <animations/>
                                     <state key="normal" backgroundImage="Compose"/>
@@ -212,7 +212,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Compose" width="256" height="256"/>
+        <image name="Compose" width="112" height="112"/>
         <image name="Filter Icon" width="128" height="128"/>
         <image name="Logo Background A" width="375" height="667"/>
         <image name="Menu Icon" width="1000" height="1000"/>
