@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		296ACE361BE83D5000F95FF1 /* Comfortaa-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 296ACE331BE83A1F00F95FF1 /* Comfortaa-Regular.ttf */; };
+		296ACE371BE83D5000F95FF1 /* Comfortaa-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 296ACE341BE83A1F00F95FF1 /* Comfortaa-Light.ttf */; };
+		296ACE381BE83D5000F95FF1 /* Comfortaa-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 296ACE351BE83A1F00F95FF1 /* Comfortaa-Bold.ttf */; };
 		29DF30411BE0071B00E41B47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29DF30401BE0071B00E41B47 /* AppDelegate.swift */; };
 		29DF30431BE0071B00E41B47 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29DF30421BE0071B00E41B47 /* ViewController.swift */; };
 		29DF30461BE0071B00E41B47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29DF30441BE0071B00E41B47 /* Main.storyboard */; };
@@ -244,6 +247,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				296ACE361BE83D5000F95FF1 /* Comfortaa-Regular.ttf in Resources */,
+				296ACE371BE83D5000F95FF1 /* Comfortaa-Light.ttf in Resources */,
+				296ACE381BE83D5000F95FF1 /* Comfortaa-Bold.ttf in Resources */,
 				29DF304E1BE0071B00E41B47 /* LaunchScreen.storyboard in Resources */,
 				29DF304B1BE0071B00E41B47 /* Assets.xcassets in Resources */,
 				29DF30461BE0071B00E41B47 /* Main.storyboard in Resources */,
